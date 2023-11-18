@@ -32,7 +32,7 @@ class AuthService {
         try {
             return await account.deleteSession("current");
         } catch (error) {
-            throw error;
+            console.log(error);
         }
     }
 
@@ -41,7 +41,8 @@ class AuthService {
             const loggedIn = await account.get();
             return loggedIn;
         } catch (error) {
-            throw error;
+            // throw error;
+            console.log(error)
         }
         return null;
     }

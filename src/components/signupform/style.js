@@ -89,6 +89,10 @@ margin-top:1rem;
 background-color:${props => props.theme.button};
 cursor: pointer;
 color:${props => props.theme.text};
+display: flex;
+align-items:center;
+justify-content:center;
+cursor:${props => props.cursor === "change" ? "not-allowed" : "pointer"}
 `
 export const LoginDiv = styled.div`
 display: flex;

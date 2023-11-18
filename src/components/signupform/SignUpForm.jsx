@@ -24,6 +24,7 @@ import authService from "../../appwrite/auth";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { login } from "../../store/store";
+import ButtonLoader from "../buttonLoader/ButtonLoading";
 
 function SignForm() {
   const [errorMessage, setErrorMessage] = useState(null);
@@ -133,7 +134,12 @@ function SignForm() {
             )}
           </InputWrapper>
 
-          <SignUpButton>Sign Up</SignUpButton>
+          <SignUpButton
+            disabled={signUpLoading}
+            cursor={signUpLoading ? "change" : "no"}
+          >
+            {signUpLoading ? <ButtonLoader /> : "Signup"}
+          </SignUpButton>
           {errorMessage && <ErrorMessage>*{errorMessage}</ErrorMessage>}
         </Form>
 
