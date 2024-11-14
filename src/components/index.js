@@ -21,9 +21,8 @@ import ForYou from "./foryou/ForYou";
 import LoadngScreen from "./loading/LoadngScreen";
 import MoreProducts from "./moreProducts/MoreProducts";
 import MobileHeader from "./header/MobileHeader";
-import Form from "./contactMeForm/ContactForm";
 import ButtonLoader from "./buttonLoader/ButtonLoading";
 export {
     Footer, Header, SignUpForm, LoginForm, HeroBanner, ProductCategory, AllProducts, Filter, ToTop, Product, HomeCategories, CategoryProductList, RelatedProducts, SearchProduct, CartProduct, Summary, Skeleton, ForYou,
-    LoadngScreen, ButtonLoader, MoreProducts, MobileHeader, Form
+    LoadngScreen, ButtonLoader, MoreProducts, MobileHeader
 }

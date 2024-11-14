@@ -46,7 +46,7 @@ function Products() {
     <ProductsMain>
       <Filter isCategoryLoading={categoryLoading} />
       <AllProducts
-        productsPerPage={gridView ? 9 : 9}
+        productsPerPage={gridView ? 15 : 9}
         isLoading={isLoading}
       />
 

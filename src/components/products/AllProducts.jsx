@@ -23,6 +23,7 @@ function AllProducts({ productsPerPage, isLoading }) {
   const { gridView, filter_products } = useSelector(
     (state) => state.filterProducts
   );
+  
   const { pageNumber } = useSelector((state) => state.products);
   let numberArray = [];
 

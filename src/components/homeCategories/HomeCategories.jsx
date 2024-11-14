@@ -5,6 +5,7 @@ import Skeleton from "../skeleton/Skeleton";
 
 function HomeCategories() {
   const { data, isFetching } = useFetchAllCategoriesQuery();
+  console.log("Home data", data);
 
   return !isFetching ? (
     <Container>

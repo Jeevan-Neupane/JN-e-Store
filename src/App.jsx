@@ -32,6 +32,8 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  console.log(loading, error);
+
   useEffect(() => {
     authService
       .getCurrentUser()

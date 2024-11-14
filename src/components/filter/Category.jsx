@@ -15,6 +15,8 @@ function Category({ isCategoryLoading }) {
 
   const { categories } = products;
 
+  console.log("Categories", categories);
+
   const [categorySelected, setCategorySelected] = useState("all");
 
   useEffect(() => {

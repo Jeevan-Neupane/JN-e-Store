@@ -117,6 +117,7 @@ flex-direction:column;
     text-decoration:none;
     color:white;
     font-size:2rem;
+    margin-top:2rem;
 }
 h2{
     font-size:2rem;
