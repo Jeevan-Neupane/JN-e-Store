@@ -18,7 +18,7 @@ import {
   SignUpButton,
   TitleDiv,
 } from "./style";
-import Logo from "./logo/logo";
+import Logo from "./logo/Logo";
 import SearchBar from "./searchbar/SearchBar";
 import { BiLogoProductHunt, BiSolidUser } from "react-icons/bi";
 import UserBox from "../userbox/UserBox";
@@ -51,7 +51,7 @@ function MobileHeader() {
   return (
     <OuterMobNavDiv>
       <MobileNav>
-      <TitleDiv>JN-e-Store</TitleDiv>
+        <TitleDiv>JN-e-Store</TitleDiv>
         <MainDiv>
           <LogoDiv>
             <Logo />
